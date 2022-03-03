@@ -104,7 +104,7 @@ function handleSubmit(event) {
           </select>
 
           <label htmlFor="minABVInput">Min ABV: </label>
-          <input type="number" className="searchInput" placeholder="min abv" id="minABVInput" step="0.1"/> 
+          <input type="number" className="searchInput" placeholder="Min abv" id="minABVInput" step="0.1"/> 
 
           <label htmlFor="maxABVInput">Max ABV: </label>
           <input type="number" className="searchInput" placeholder="Max abv" id="maxABVInput" step="0.1"/> 
