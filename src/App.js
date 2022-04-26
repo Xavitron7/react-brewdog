@@ -11,7 +11,6 @@ function App() {
   const [allBeers, setAllBeers] = useState([]);
   const [displayBeers, setDisplayBeers] = useState([]);
   const [beerName, setBeerName] = useState("");
-  const logger = () => {console.log(allBeers, displayBeers, beerName)};  
 
 useEffect(() => {
   const callAPI = async () => {
@@ -127,9 +126,6 @@ function handleSubmit(event) {
         </Container>
 
         </Container>
-
-
-      <button onClick={logger}>API</button>
       
       </Container>
     
