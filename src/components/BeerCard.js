@@ -1,23 +1,22 @@
 import React from "react";
-import "./BeerCard.css"
+import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup"
 
 export const BeerCard = ({beer}) => {
     return (
-        <div className="beerCard">
-            <img src={beer.image_url} alt={beer.name} className="beerImg" />
-            <div className="name-detail-div"><p className="cardDetail"><span className="cardHeading">Name: </span>{beer.name}</p></div>
-            <div className="name-detail-div"><p className="cardDetail"><span className="cardHeading">Tagline: </span>{beer.tagline}</p></div>
-            <div className="name-detail-div"><p className="cardDetail"><span className="cardHeading">First Brewed: </span> {beer.first_brewed}</p></div>
-            <div className="name-detail-div"><p className="cardDetail"><span className="cardHeading">Description: </span>{beer.description}</p></div>
-            <div className="name-detail-div"><p className="cardDetail"><span className="cardHeading">ABV (%): </span> {beer.abv}</p></div>
-            <div className="name-detail-div"><p className="cardDetail"><span className="cardHeading">Food pairing: </span> {beer.food_pairing.map(pairing => <p className="pairing" key={Math.random() * 100000}>{pairing}</p>)}</p></div>
+        <Card>
+            <Card.Header className="text-center my-1 bg-info p-2 text-light">{beer.name}</Card.Header>
+            <Card.Subtitle>{beer.tagline}</Card.Subtitle>
+            <Card.Text>First Brewed: {beer.first_brewed}</Card.Text>
+            <Card.Text>Description: {beer.description}</Card.Text>
+            <Card.Text>ABV: {beer.abv}%</Card.Text>
+            <ListGroup className="list-group-flush">
+                <Card.Text>Food Pairing:</Card.Text>
+                {beer.food_pairing.map(pairing => <ListGroup.Item key={Math.random() * 100000}>{pairing}</ListGroup.Item>)}
+            </ListGroup>            
 
-
-        </div>
+        </Card>
+        
     )
 
 }
-
-//change those p elements to p and span for easier reading
-
-//            <div className="cardImgDiv"><img src={beer.image_url} alt={beer.name} className="beerImg" /></div>
