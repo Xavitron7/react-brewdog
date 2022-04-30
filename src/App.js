@@ -82,8 +82,8 @@ function handleSubmit(event) {
 }
   return (
         
-      <Container fluid >
-        <Row className="bg-dark" >
+      <Container fluid className="bg-light">
+        <Row className="bg-dark">
           <h1 className="text-light text-center">Brewdog Beer Picker</h1>
         </Row>
         <Container>
@@ -116,7 +116,7 @@ function handleSubmit(event) {
         </Form>
         
         <Container className="my-2">
-          <Row s={1} lg={2}>
+          <Row s={1} lg={2} className="gy-1 gx-0">
           {displayBeers.map(beer => {
             return <BeerCard beer={beer} key={Math.random() * 10000}/>
           })}
