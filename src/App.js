@@ -82,50 +82,49 @@ function handleSubmit(event) {
 }
   return (
         
-      <Container fluid className="bg-light">
+      <Container fluid className="bg-light" id="top">
         <Row className="bg-dark">
           <h1 className="text-light text-center">Brewdog Beer Picker</h1>
         </Row>
         <Container>
-        <Form onSubmit={handleSubmit}>
-          <Form.Group controlId="beerSelect">
-            <Form.Label>Beer:</Form.Label>
-            <Form.Select aria-label="Select a beer" >
-              <option value="Any">Any</option>
-              {allBeers.map(beer => {return <option value={beer.name}>{beer.name}</option>})} 
-            </Form.Select>
-          </Form.Group>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group controlId="beerSelect">
+              <Form.Label>Beer:</Form.Label>
+              <Form.Select aria-label="Select a beer" >
+                <option value="Any">Any</option>
+                {allBeers.map(beer => {return <option value={beer.name}>{beer.name}</option>})} 
+              </Form.Select>
+            </Form.Group>
 
-          <Form.Group controlId="minABVInput">
-            <Form.Label>Min ABV:</Form.Label>
-            <Form.Control type="number" placeholder="Min ABV" step="0.1" />          
-          </Form.Group>
+            <Form.Group controlId="minABVInput">
+              <Form.Label>Min ABV:</Form.Label>
+              <Form.Control type="number" placeholder="Min ABV" step="0.1" />          
+            </Form.Group>
 
-          <Form.Group controlId="maxABVInput">
-            <Form.Label>Max ABV:</Form.Label>
-            <Form.Control type="number" placeholder="Max ABV" step="0.1" />
-          </Form.Group>
+            <Form.Group controlId="maxABVInput">
+              <Form.Label>Max ABV:</Form.Label>
+              <Form.Control type="number" placeholder="Max ABV" step="0.1" />
+            </Form.Group>
 
-          <ButtonGroup aria-label="Form button group" className="my-3">
-            <Button type="reset" className="btn btn-danger">Clear Selections</Button>
-            <Button type="submit" className="btn btn-success">Submit</Button>
-            <Button type="button" onClick={displayRandomBeer}>Randomise</Button>
-            <Button type="button" onClick={displayAllBeers}>Display All Beers</Button>
-          </ButtonGroup>
+            <ButtonGroup aria-label="Form button group" className="my-3">
+              <Button type="reset" className="btn btn-danger">Clear Selections</Button>
+              <Button type="submit" className="btn btn-success">Submit</Button>
+              <Button type="button" onClick={displayRandomBeer}>Randomise</Button>
+              <Button type="button" onClick={displayAllBeers}>Display All Beers</Button>
+            </ButtonGroup>
 
-        </Form>
+          </Form>
         
-        <Container className="my-2">
-          <Row s={1} lg={2} className="gy-1 gx-0">
-          {displayBeers.map(beer => {
-            return <BeerCard beer={beer} key={Math.random() * 10000}/>
-          })}
-
-          </Row>
-         
-        </Container>
+          <Container className="my-2">
+            <Row s={1} lg={2} className="gy-1 gx-0">
+            {displayBeers.map(beer => {
+              return <BeerCard beer={beer} key={Math.random() * 10000}/>
+            })}
+            </Row>         
+          </Container>
 
         </Container>
+        <a href="#top">Return to Top</a>
       
       </Container>
     
