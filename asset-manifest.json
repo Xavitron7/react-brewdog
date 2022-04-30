@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-brewdog/static/css/main.17bdd0c7.chunk.css",
-    "main.js": "/react-brewdog/static/js/main.76090b02.chunk.js",
-    "main.js.map": "/react-brewdog/static/js/main.76090b02.chunk.js.map",
+    "main.js": "/react-brewdog/static/js/main.5c356f40.chunk.js",
+    "main.js.map": "/react-brewdog/static/js/main.5c356f40.chunk.js.map",
     "runtime-main.js": "/react-brewdog/static/js/runtime-main.f3ae7c0d.js",
     "runtime-main.js.map": "/react-brewdog/static/js/runtime-main.f3ae7c0d.js.map",
-    "static/js/2.edb1e84f.chunk.js": "/react-brewdog/static/js/2.edb1e84f.chunk.js",
-    "static/js/2.edb1e84f.chunk.js.map": "/react-brewdog/static/js/2.edb1e84f.chunk.js.map",
+    "static/js/2.8603772f.chunk.js": "/react-brewdog/static/js/2.8603772f.chunk.js",
+    "static/js/2.8603772f.chunk.js.map": "/react-brewdog/static/js/2.8603772f.chunk.js.map",
     "static/js/3.dbb5dc75.chunk.js": "/react-brewdog/static/js/3.dbb5dc75.chunk.js",
     "static/js/3.dbb5dc75.chunk.js.map": "/react-brewdog/static/js/3.dbb5dc75.chunk.js.map",
     "index.html": "/react-brewdog/index.html",
     "static/css/main.17bdd0c7.chunk.css.map": "/react-brewdog/static/css/main.17bdd0c7.chunk.css.map",
-    "static/js/2.edb1e84f.chunk.js.LICENSE.txt": "/react-brewdog/static/js/2.edb1e84f.chunk.js.LICENSE.txt"
+    "static/js/2.8603772f.chunk.js.LICENSE.txt": "/react-brewdog/static/js/2.8603772f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f3ae7c0d.js",
-    "static/js/2.edb1e84f.chunk.js",
+    "static/js/2.8603772f.chunk.js",
     "static/css/main.17bdd0c7.chunk.css",
-    "static/js/main.76090b02.chunk.js"
+    "static/js/main.5c356f40.chunk.js"
   ]
 }
